@@ -19,6 +19,10 @@ const lossesEl = document.getElementById("losses");
 chips.forEach(chip => {
   chip.addEventListener("click", () => {
     const value = parseInt(chip.getAttribute("data-value"));
+
+    chip.classList.add("spin");
+    setTimeout(() => chip.classList.remove("spin"), 500);
+
     if (money >= value) {
       bet = value;
       messageEl.textContent = `Bet placed: $${bet}`;
@@ -27,6 +31,7 @@ chips.forEach(chip => {
     }
   });
 });
+
 
 function getCard() {
   const suits = ["♠️", "♥️", "♣️", "♦️"];
