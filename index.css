@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    text-align: center;
+  }
+  
+  #title {
+    font-size: 3.5rem;
+    color: gold;
+    margin: 20px 0;
+    text-shadow: 2px 2px 12px #000;
+    font-family: 'Times New Roman', serif;
+  }
+  
+  .money {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #0ff;
+  }
+  
+  .bets {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+  
+  .chip {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    line-height: 60px;
+    font-weight: bold;
+    color: white;
+    background: radial-gradient(circle, crimson 30%, darkred);
+    border: 2px solid white;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .chip:hover {
+    transform: scale(1.2);
+  }
+  
+  .tables {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .box {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+    min-width: 300px;
+    width: 40%;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  }
+  
+  #dealer-cards, #player-cards {
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+  
+  .buttons, .controls {
+    margin: 20px 0;
+  }
+  
+  .action-btn, .control-btn {
+    margin: 5px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .action-btn {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+  }
+  
+  .action-btn:hover {
+    background: linear-gradient(to right, #0072ff, #004eff);
+    transform: scale(1.05);
+  }
+  
+  .control-btn {
+    background: linear-gradient(to right, #f7971e, #ffd200);
+    color: black;
+  }
+  
+  .control-btn:hover {
+    background: linear-gradient(to right, #e6a700, #e6c200);
+    transform: scale(1.05);
+  }
+  
+  #message {
+    font-style: italic;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #fffa;
+  }
+  
+  .history {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #0ff;
+  }
+  
